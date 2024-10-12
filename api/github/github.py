@@ -21,8 +21,6 @@ def extract_owner_repo(url, headers):
         owner = parts[1]
         repo = parts[2]
         base_url = f"https://api.github.com/repos/{owner}/{repo}"
-        print(headers)
-        logging.info(f"Fetching repo in github.py: {base_url}")
         response = requests.get(base_url, headers=headers)
         if response.status_code != 200:
             raise ValueError(f"Invalid URL: {response.status_code}")
