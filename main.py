@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
-from api.github.github import fetch_files_in_repo
-from api.gpt.gpt import gpt4_edit_repo
+from other.github.github import fetch_files_in_repo
+from other.gpt.gpt import gpt4_edit_repo
 import dotenv
 import os
 from typing import Optional
