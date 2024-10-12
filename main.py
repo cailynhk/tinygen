@@ -37,3 +37,7 @@ async def fetch_repo(request: Target):
     file_content = fetch_files_in_repo(request.repoUrl, github_token)
     result = gpt4_edit_repo(request.prompt, file_content, os.getenv("OPENAI_API_KEY"), os.getenv("OPENAI_PROJECT_ID"))
     return {"response": result}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
