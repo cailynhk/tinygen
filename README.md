@@ -12,8 +12,10 @@ And returns the diff that accomplishes this task.
 2. Setup environment variables in a `.env` file, or request me for environment variables :)
 
 3. Running server
-   Please make sure your current directory is tinygen\api, otherwise: 
+   Please make sure your current directory is tinygen\api, otherwise:
+   
    `cd api`
+   
    in the terminal.
 
    After, run the following in the terminal: 
@@ -25,7 +27,5 @@ And returns the diff that accomplishes this task.
    Place the repo URL and the prompt in the body of the request. 
 
 ## Hitting the public URL: 
-- using link/fetch-repo/
-- put inputs
-- request using link 
-
+1. Using Postman, request TingyGen using the following link: https://tinygen-theta.vercel.app/fetch-repo/
+2. Place the repo URL and the prompt in the body of the request. 
