@@ -23,7 +23,7 @@ And returns the diff that accomplishes this task.
    `python main.py`
 
 5. Using Postman, request TinyGen using the following link:
-   http://localhost:800/fetch-repo/
+   http://localhost:8000/fetch-repo/
 
    Place the repo URL and the prompt in the body of the request. 
 
