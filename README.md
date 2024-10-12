@@ -27,5 +27,5 @@ And returns the diff that accomplishes this task.
    Place the repo URL and the prompt in the body of the request. 
 
 ## Hitting the public URL: 
-1. Using Postman, request TingyGen using the following link: https://tinygen-theta.vercel.app/fetch-repo/
+1. Using Postman, request TinyGen using the following link: https://tinygen-theta.vercel.app/fetch-repo/
 2. Place the repo URL and the prompt in the body of the request. 
