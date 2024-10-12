@@ -12,6 +12,7 @@ And returns the diff that accomplishes this task.
 2. Setup environment variables in a `.env` file, or request me for environment variables :)
 
 3. Running server
+
    Please make sure your current directory is tinygen\api, otherwise:
    
    `cd api`
