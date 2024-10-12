@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
-from api.github.github import fetch_files_in_repo
-from api.gpt.gpt import gpt4_edit_repo
+from other.github.github import fetch_files_in_repo
+from other.gpt.gpt import gpt4_edit_repo
 import dotenv
 import os
 from typing import Optional
@@ -37,3 +37,7 @@ async def fetch_repo(request: Target):
     file_content = fetch_files_in_repo(request.repoUrl, github_token)
     result = gpt4_edit_repo(request.prompt, file_content, os.getenv("OPENAI_API_KEY"), os.getenv("OPENAI_PROJECT_ID"))
     return {"response": result}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
